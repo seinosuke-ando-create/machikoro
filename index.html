@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>街コロ風ゲーム</title>
 </head>
+
 <body>
 
   <h1>街コロ風ゲーム（試作）</h1>
@@ -15,15 +17,26 @@
   <p>ダイスの目: <span id="diceResult">-</span></p>
   <p>所持金: <span id="moneyResult">3</span></p>
   <h2>所持建物</h2>
-    <p>小麦畑: <span id="wheatCount">1</span></p>
-    <p>パン屋: <span id="bakeryCount">0</span></p>
+  <p>小麦畑: <span id="wheatCount">1</span></p>
+  <p>パン屋: <span id="bakeryCount">0</span></p>
+  <p>カフェ: <span id="cafeCount">0</span></p>
+
+  <h2>ランドマーク</h2>
+  <p>駅: <span id="stationStatus">未建設</span></p>
+  <p>ショッピングモール: <span id="mallStatus">未建設</span></p>
 
   <h2>建物購入</h2>
+  <h3>建物</h3>
   <button id="buyWheat">小麦畑を買う</button>
   <button id="buyBakery">パン屋を買う</button>
+  <button id="buyCafe">カフェを買う（2コイン）</button>
   <button id="skipBuy">何もしない</button>
+  <h3>ランドマーク</h3>
+  <button id="buyStation">駅を建設（4コイン）</button>
+  <button id="buyMall">モールを建設（6コイン）</button>
 
   <script src="game.js"></script>
 
 </body>
+
 </html>
