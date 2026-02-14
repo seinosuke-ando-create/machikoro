@@ -8,10 +8,20 @@
 
   <h1>街コロ風ゲーム（試作）</h1>
 
-  <p>ダイスの目: <span id="diceResult">-</span></p>
-  <p>所持金: <span id="moneyResult">3</span></p>
+  <h2>現在のプレイヤー: <span id="currentPlayer">1</span></h2>
 
   <button id="rollButton">ダイスを振る</button>
+
+  <p>ダイスの目: <span id="diceResult">-</span></p>
+  <p>所持金: <span id="moneyResult">3</span></p>
+  <h2>所持建物</h2>
+    <p>小麦畑: <span id="wheatCount">1</span></p>
+    <p>パン屋: <span id="bakeryCount">0</span></p>
+
+  <h2>建物購入</h2>
+  <button id="buyWheat">小麦畑を買う</button>
+  <button id="buyBakery">パン屋を買う</button>
+  <button id="skipBuy">何もしない</button>
 
   <script src="game.js"></script>
 
